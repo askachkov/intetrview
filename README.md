@@ -2,6 +2,7 @@
 
 ## Links
 - ![The rule of three/five/zero](https://en.cppreference.com/w/cpp/language/rule_of_three)
+- ![Understanding of lvalues and rvalues in C and C++](https://habr.com/ru/post/348198/)
 
 
 ## Integer
