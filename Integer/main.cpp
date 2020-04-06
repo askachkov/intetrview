@@ -5,6 +5,18 @@ using namespace std;
 
 int main()
 {
+    /**
+      * Code below it's an test place.
+      * You can change it as you want.
+      *
+      * The goal of code below is to understand
+      * how default methods works. Please pay
+      * attansion that Integer class by itself
+      * does not have implemented CopyCtor for
+      * example. Anyway it invokes from base class
+      * Object and so on.
+      *
+      * */
     {
         Integer o1, o4; // Default Ctor
 
@@ -20,6 +32,10 @@ int main()
         }
     }
 
+    /**
+      * The goal of this example is to make code below works.
+      *
+      */
 
 //Broken code below
 //    Integer v1, v2, v3, v4;
