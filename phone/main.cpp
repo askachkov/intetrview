@@ -14,12 +14,14 @@ using namespace std;
 int main()
 {
     KeyBoard board;
-    KeyResult res = board.getResult( {2,2,0,3,7} );
+    KeyResult res = board.getAllResults( {2,2,0,3,7} );
     cout << res.totalResults() << endl;
 
     for ( int i = 0; i < res.totalResults(); ++i ){
         cout << res.getResult(i) << endl;
     }
+
+    cout << board.getSingleResult({2,2,0,3,4} ) << endl;
 
     return 0;
 }

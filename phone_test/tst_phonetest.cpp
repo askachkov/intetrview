@@ -16,6 +16,7 @@ private slots:
     void test_case1();
     void test_case2();
     void test_case3();
+    void test_case4();
 };
 
 PhoneTest::PhoneTest()
@@ -31,7 +32,7 @@ PhoneTest::~PhoneTest()
 void PhoneTest::test_case1()
 {
     KeyBoard keyBoard;
-    KeyResult keyResult1 = keyBoard.getResult( {2,2,3} );
+    KeyResult keyResult1 = keyBoard.getAllResults( {2,2,3} );
     QVERIFY( keyResult1.getResult(17).compare("bcf") == 0 );
     QVERIFY( keyResult1.totalResults() == 27 );
 }
@@ -39,7 +40,7 @@ void PhoneTest::test_case1()
 void PhoneTest::test_case2()
 {
     KeyBoard keyBoard;
-    KeyResult keyResult1 = keyBoard.getResult( {2,2,0,3} );
+    KeyResult keyResult1 = keyBoard.getAllResults( {2,2,0,3} );
     QVERIFY( keyResult1.getResult(17).compare("bc f") == 0 );
     QVERIFY( keyResult1.totalResults() == 27 );
 }
@@ -57,9 +58,16 @@ void PhoneTest::test_case3()
     //a a - e s
 
     KeyBoard keyBoard;
-    KeyResult keyResult1 = keyBoard.getResult( {2,2,0,3,7} );
+    KeyResult keyResult1 = keyBoard.getAllResults( {2,2,0,3,7} );
     QVERIFY( keyResult1.totalResults() == 108 );
     QVERIFY( keyResult1.getResult(6).compare("aa er") == 0 );
+}
+
+void PhoneTest::test_case4()
+{
+    KeyBoard keyBoard;
+    std::string keyResult1 = keyBoard.getSingleResult( {2,2,0,3,7} );
+    QVERIFY( keyResult1.compare("b dp") == 0 );
 }
 
 

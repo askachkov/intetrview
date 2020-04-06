@@ -10,7 +10,8 @@ class KeyBoard
 
 public:
     KeyBoard();
-    KeyResult getResult( const std::vector<int> & digits )const;
+    KeyResult getAllResults( const std::vector<int> & digits )const;
+    std::string getSingleResult( const std::vector<int> & digits )const;
 };
 
 #endif // KEYBOARD_H
