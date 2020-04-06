@@ -1,5 +1,9 @@
 # Interview
 
+## Links
+- ![The rule of three/five/zero](https://en.cppreference.com/w/cpp/language/rule_of_three)
+
+
 ## Integer
 У нас есть два проекта:
 1. **Integer** - этот проект с основным кодом. Часть кода закоментирована и не собирается.
