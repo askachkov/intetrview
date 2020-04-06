@@ -2,4 +2,6 @@ TEMPLATE = subdirs
 
 SUBDIRS += \
     phone \
-    phone_test
+    phone_test \
+    Integer \
+    Integer_Test
