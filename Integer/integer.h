@@ -11,9 +11,16 @@ class Integer:
 public:
     Integer(int32_t value = 0); // Default Ctor + Ctor with value
 
+    Integer operator + (const Integer& var);
+    Integer operator - (const Integer& var);
     Integer operator * (const Integer& var);
+    Integer operator / (const Integer& var);
     Integer operator % (const Integer& var);
     bool operator < (const Integer& var);
+    bool operator <= (const Integer& var);
+    bool operator > (const Integer& var);
+    bool operator >= (const Integer& var);
+    bool operator == (const Integer& var);
 
     Object::String toString()
     {
