@@ -15,6 +15,11 @@ public:
     Integer operator % (const Integer& var);
     bool operator < (const Integer& var);
 
+    Object::String toString()
+    {
+        return std::to_string(m_Value);
+    }
+
     friend std::ostream& operator<<(std::ostream& os, const Integer& var)
     {
         return os << var.m_Value;
