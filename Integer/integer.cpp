@@ -12,6 +12,11 @@ Integer::Integer(int32_t value)
     m_Value = value;
 }
 
+Object::String Integer::toString()
+{
+    return std::to_string(m_Value);
+}
+
 std::ostream& operator<< (std::ostream &out, const Integer &point)
 {
     out << point.m_Value;
