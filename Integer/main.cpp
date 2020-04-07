@@ -38,17 +38,29 @@ int main()
       */
 
 //Broken code below
-//    Integer v1, v2, v3, v4;
-//    v1 = 3;
-//    v2 = v1 * 12;
-//    v3 = v2 % 4;
-//    cout << "V3: " << v3 << endl;
-//    cout << "Enter v4 value: ";
-//    cin >> v4;
-//    if ( v4 < 34 ){
-//        cout << "V4: " << v4 << endl;
-//    } else {
-//        cout << "V4: " << (v4%34) << endl;
-//    }
+    cout << "#start" << endl;
+    Integer v1, v2, v3, v4;
+
+    cout << "#1" << endl;
+    v1 = 3;
+
+    cout << "#2" << endl;
+    v2 = v1 * 12;
+
+    cout << "#3" << endl;
+    v3 = v2 % 5;
+
+    cout << "#4" << endl;
+    cout << "V3: " << v3 << endl;
+    cout << "Enter v4 value: ";
+    cin >> v4;
+
+    if ( v4 < 34 ){
+        cout << "V4: " << v4 << endl;
+    } else {
+        cout << "V4%34: " << (v4%34) << endl;
+    }
+
+    cout << "#end" << endl;
     return 0;
 }
