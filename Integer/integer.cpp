@@ -8,12 +8,18 @@ Integer::Integer(int32_t value)
 {
     m_Value = value;
 }
-int32_t Integer::getValue() const {
+int32_t Integer::getValue() const
+{
 	return m_Value;
 }
 
-void Integer::setValue(int32_t value){
+void Integer::setValue(int32_t value)
+{
 	m_Value=value;
+}
+Object::String Integer::toString()
+{
+	return to_string(m_Value);
 }
 
 ostream& operator<<(ostream &out, const Integer value)
@@ -42,6 +48,43 @@ Integer &Integer::operator% (const Integer &value)
     return *this;
 }
 
-bool Integer::operator< (const Integer &value){
+bool Integer::operator< (const Integer &value)
+{
 	return (getValue() < value.getValue());
+}
+
+bool Integer::operator> (const Integer &value)
+{
+	return (getValue() > value.getValue());
+}
+
+bool Integer::operator<= (const Integer &value)
+{
+	return (getValue() <= value.getValue());
+}
+
+bool Integer::operator>= (const Integer &value)
+{
+	return (getValue() >= value.getValue());
+}
+
+bool Integer::operator== (const Integer &value)
+{
+	return (getValue() == value.getValue());
+}
+
+Integer &Integer::operator+ (const Integer &value)
+{
+	setValue(getValue()+value.getValue());
+    return *this;
+}
+Integer &Integer::operator- (const Integer &value)
+{
+	setValue(getValue()-value.getValue());
+    return *this;
+}
+Integer &Integer::operator/ (const Integer &value)
+{
+	setValue(getValue()/value.getValue());
+	return *this;
 }

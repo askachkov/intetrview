@@ -12,8 +12,17 @@ public:
     Integer &operator* (const Integer &value);
     Integer &operator% (const Integer &value);
     bool operator< (const Integer &value);
+    bool operator> (const Integer &value);
+    bool operator<= (const Integer &value);
+    bool operator>= (const Integer &value);
+    bool operator== (const Integer &value);
+    Integer &operator+ (const Integer &value);
+    Integer &operator- (const Integer &value);
+    Integer &operator/ (const Integer &value);
+
     int32_t getValue() const;
     void setValue(int32_t value);
+    Object::String toString();
 private:
     int32_t m_Value;
 };
