@@ -52,7 +52,7 @@ int main()
     v1 = 3;
     v2 = v1 * 12;
     v3 = v2 % 4;
-//    check(o1, o4);
+    check(v1, v2);
     cout << "V3: " << v3 << endl;
     cout << "Enter v4 value: ";
     cin >> v4;
