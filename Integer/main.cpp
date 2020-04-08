@@ -3,6 +3,15 @@
 
 using namespace std;
 
+static bool check( const Integer & a, const Integer & b )
+{
+    bool x = a < b;
+    x |= a > b;
+    x |= a <= b;
+    x |= a >= b;
+    return x;
+}
+
 int main()
 {
     /**
@@ -42,6 +51,7 @@ int main()
     v1 = 3;
     v2 = v1 * 12;
     v3 = v2 % 4;
+    check(v1, v2);
     cout << "V3: " << v3 << endl;
     cout << "Enter v4 value: ";
     cin >> v4;

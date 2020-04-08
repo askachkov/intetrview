@@ -5,7 +5,7 @@ Integer::Integer(int32_t value)
     m_Value = value;
 }
 
-Integer Integer::operator +(Integer &other)
+Integer Integer::operator +(const Integer &other)
 {
     return Integer(this->m_Value + other.m_Value);
 }
@@ -36,22 +36,22 @@ bool Integer::operator <(int32_t x)
     return this->m_Value < x;
 }
 
-bool Integer::operator >(Integer &other)
+bool Integer::operator >(const Integer &other) const
 {
     return this->m_Value > other.m_Value;
 }
 
-bool Integer::operator <(Integer &other)
+bool Integer::operator <(const Integer &other) const
 {
     return this->m_Value < other.m_Value;
 }
 
-bool Integer::operator >=(Integer &other)
+bool Integer::operator >=(const Integer &other) const
 {
     return this->m_Value >= other.m_Value;
 }
 
-bool Integer::operator <=(Integer &other)
+bool Integer::operator <=(const Integer &other) const
 {
     return this->m_Value <= other.m_Value;
 }
