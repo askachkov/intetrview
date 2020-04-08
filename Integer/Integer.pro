@@ -10,6 +10,3 @@ SOURCES += main.cpp \
 HEADERS += \
     object.h \
     integer.h
-
-DISTFILES += \
-    temp.bin
