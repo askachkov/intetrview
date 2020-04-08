@@ -15,6 +15,7 @@ private slots:
     void test_case1();
     void test_case2();
     void test_case3();
+    void test_case4();
 };
 
 Integer_Test::Integer_Test()
@@ -50,6 +51,19 @@ void Integer_Test::test_case3()
 {
     Integer v1(12);
     QVERIFY(v1.toString().compare("12") == 0);
+}
+
+void Integer_Test::test_case4()
+{
+    Integer v1, v2;
+//    v1 = 1;
+//    v2 = v1 + 5;
+//    QVERIFY( v1.getValue() == 1 );
+//    QVERIFY( v2.getValue() == 6 );
+//    v1 = 5;
+//    v2 = v1 - 1;
+//    QVERIFY( v1.getValue() == 5 );
+//    QVERIFY( v2.getValue() == 4 );
 }
 
 QTEST_APPLESS_MAIN(Integer_Test)

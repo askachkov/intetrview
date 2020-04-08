@@ -1,0 +1,21 @@
+bool check( const Integer & a, const Integer & b )
+{
+    bool x = a < b;
+    x |= a > b;
+    x |= a <= b;
+    x |= a >= b;
+    return x;
+}
+
+void Integer_Test::test_case4()
+{
+    Integer v1, v2;
+    v1 = 1;
+    v2 = v1 + 5;
+    QVERIFY( v1.getValue() == 1 );
+    QVERIFY( v2.getValue() == 6 );
+    v1 = 5;
+    v2 = v1 - 1;
+    QVERIFY( v1.getValue() == 5 );
+    QVERIFY( v2.getValue() == 4 );
+}
