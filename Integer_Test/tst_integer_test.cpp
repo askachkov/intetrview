@@ -54,14 +54,14 @@ void Integer_Test::test_case3()
 void Integer_Test::test_case4()
 {
     Integer v1, v2;
-//    v1 = 1;
-//    v2 = v1 + 5;
-//    QVERIFY( v1.getValue() == 1 );
-//    QVERIFY( v2.getValue() == 6 );
-//    v1 = 5;
-//    v2 = v1 - 1;
-//    QVERIFY( v1.getValue() == 5 );
-//    QVERIFY( v2.getValue() == 4 );
+    v1 = 1;
+    v2 = v1 + 5;
+    QVERIFY( v1.getValue() == 1 );
+    QVERIFY( v2.getValue() == 6 );
+    v1 = 5;
+    v2 = v1 - 1;
+    QVERIFY( v1.getValue() == 5 );
+    QVERIFY( v2.getValue() == 4 );
 }
 
 QTEST_APPLESS_MAIN(Integer_Test)

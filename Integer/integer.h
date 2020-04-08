@@ -9,16 +9,16 @@ class Integer:
 {
 public:
     Integer(int32_t value = 0); // Default Ctor + Ctor with value
-    Integer &operator* (const Integer &value);
-    Integer &operator% (const Integer &value);
-    bool operator< (const Integer &value);
-    bool operator> (const Integer &value);
-    bool operator<= (const Integer &value);
-    bool operator>= (const Integer &value);
-    bool operator== (const Integer &value);
-    Integer &operator+ (const Integer &value);
-    Integer &operator- (const Integer &value);
-    Integer &operator/ (const Integer &value);
+    Integer operator* (const Integer &value) const;
+    Integer operator% (const Integer &value) const;
+    bool operator< (const Integer &value) const;
+    bool operator> (const Integer &value) const;
+    bool operator<= (const Integer &value) const;
+    bool operator>= (const Integer &value) const;
+    bool operator== (const Integer &value) const;
+    Integer operator+ (const Integer &value) const;
+    Integer operator- (const Integer &value) const;
+    Integer operator/ (const Integer &value) const;
 
     int32_t getValue() const;
     void setValue(int32_t value);

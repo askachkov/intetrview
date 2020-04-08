@@ -36,55 +36,50 @@ istream& operator>>(istream &input,Integer &value)
     return input;
 }
 
-Integer &Integer::operator* (const Integer &value)
+Integer Integer::operator* (const Integer &value) const
 {
-	setValue(getValue()*value.getValue());
-    return *this;
+	return (getValue()*value.getValue());
 }
 
-Integer &Integer::operator% (const Integer &value)
+Integer Integer::operator% (const Integer &value) const
 {
-	setValue(getValue()%value.getValue());
-    return *this;
+	return (getValue()%value.getValue());
 }
 
-bool Integer::operator< (const Integer &value)
+bool Integer::operator< (const Integer &value) const
 {
 	return (getValue() < value.getValue());
 }
 
-bool Integer::operator> (const Integer &value)
+bool Integer::operator> (const Integer &value) const
 {
 	return (getValue() > value.getValue());
 }
 
-bool Integer::operator<= (const Integer &value)
+bool Integer::operator<= (const Integer &value) const
 {
 	return (getValue() <= value.getValue());
 }
 
-bool Integer::operator>= (const Integer &value)
+bool Integer::operator>= (const Integer &value) const
 {
 	return (getValue() >= value.getValue());
 }
 
-bool Integer::operator== (const Integer &value)
+bool Integer::operator== (const Integer &value) const
 {
 	return (getValue() == value.getValue());
 }
 
-Integer &Integer::operator+ (const Integer &value)
+Integer Integer::operator+ (const Integer &value) const
 {
-	setValue(getValue()+value.getValue());
-    return *this;
+	return (getValue()+value.getValue());
 }
-Integer &Integer::operator- (const Integer &value)
+Integer Integer::operator- (const Integer &value) const
 {
-	setValue(getValue()-value.getValue());
-    return *this;
+	return (getValue()-value.getValue());
 }
-Integer &Integer::operator/ (const Integer &value)
+Integer Integer::operator/ (const Integer &value) const
 {
-	setValue(getValue()/value.getValue());
-	return *this;
+	return (getValue()/value.getValue());
 }
