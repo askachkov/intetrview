@@ -17,6 +17,7 @@ private slots:
     void test_case2();
     void test_case3();
     void test_case4();
+    void test_case5();
 };
 
 PhoneTest::PhoneTest()
@@ -68,6 +69,13 @@ void PhoneTest::test_case4()
     KeyBoard keyBoard;
     std::string keyResult1 = keyBoard.getSingleResult( {2,2,0,3,7} );
     QVERIFY( keyResult1.compare("b dp") == 0 );
+}
+
+void PhoneTest::test_case5()
+{
+    KeyBoard keyBoard;
+    std::string keyResult1 = keyBoard.getSingleResult( {2,2,3,3,3,0,9,9,9,9} );
+    QVERIFY( keyResult1.compare("bf z") == 0 );
 }
 
 
